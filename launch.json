@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch local",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "runtimeArgs": [ "--remote-debugging-port=9222" ],
+      "url": "http://localhost:4200/",
+      "sourceMapPathOverrides":
+      { 
+        "ember-quickstart/*": "${workspaceRoot}/app/*"
+      },
+      "port": 9222,
+      "diagnosticLogging": true
+    },
+  ]
+}
